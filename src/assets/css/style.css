@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: red;
+  
 }
 
 :root {
@@ -34,3 +34,41 @@ p {
     line-height: 31px;
 }
 
+.container{
+width:100%;
+padding: 0 100px;
+
+}
+
+.connect_banner{
+    display:flex;
+    background-image: url('../images/banner-images/banner-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.connect-banner-1 img{
+   border-radius: 20px;
+}
+
+.connect-banner-1 {
+    width: 50%;
+}
+.connect-banner-2 {
+    width: 50%;
+}
+
+.connect-banner-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto; 
+    gap: 10px;
+  }
+  
+  .connect-banner-1 img {
+    width: 100%; 
+    height: auto;
+    object-fit: cover; 
+  }
+  
