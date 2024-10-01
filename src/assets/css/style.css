@@ -4,7 +4,7 @@
 }
 
 body {
-    
+    background-color: red;
 }
 
 :root {
@@ -33,3 +33,4 @@ p {
     font-weight: 400;
     line-height: 31px;
 }
+
