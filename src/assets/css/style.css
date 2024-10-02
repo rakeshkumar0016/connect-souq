@@ -36,41 +36,47 @@ p {
 
 .container{
 width:100%;
-padding: 0 100px;
-
+padding: 0 ;
 }
 /* banner css start */
 
-.connect_banner{
-    display:flex;
+.connect_banner {
+    display: flex;
     background-image: url('../images/banner-images/banner-bg.png');
-  background-position: center;
-  background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
 }
-
 
 .connect-banner-1 img{
    border-radius: 20px;
+   width: 100%;
+   
 }
 
-.connect-banner-1 {
-    width: 50%;
+.connect-banner-2 img{
+    border-radius: 20px;
+    width: 100%;
+ }
+ .connect-banner-1 {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 24%;
+
 }
 .connect-banner-2 {
-    width: 50%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 24%;
 }
 
-.connect-banner-1 {
-    display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
-  grid-template-rows: 1fr 1fr; /* Two equal-height rows */
-  gap: 10px; /* Consistent gap between images */
-  height: 100%;
-  }
-  
-  .connect-banner-1 img {
-    width: 100%; /* Full width for each grid cell */
-    height: 100%; /* Full height for each grid cell */
-    object-fit: cover;
-  }
+.connect-banner-3{
+    width: 48%;
+   
+}
+
   

@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <div className="Footer">
       <div className="container">
-        <h3>home</h3>
+   
       </div>
     </div>
   );
