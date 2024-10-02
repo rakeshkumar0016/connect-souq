@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'FFF Acid Grotesk';
+    src: url('../fonts/FFF-AcidGrotesk-Light-TRIAL.woff2') format('woff2'),
+        url('../fonts/FFF-AcidGrotesk-Light-TRIAL.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FFF Acid Grotesk';
+    src: url('../fonts/FFF-AcidGrotesk-Medium-TRIAL.woff2') format('woff2'),
+        url('../fonts/FFF-AcidGrotesk-Medium-TRIAL.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FFF Acid Grotesk Extra';
+    src: url('../fonts/FFF-AcidGrotesk-ExtraBold-TRIAL.woff2') format('woff2'),
+        url('../fonts/FFF-AcidGrotesk-ExtraBold-TRIAL.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FFF Acid Grotesk';
+    src: url('../fonts/FFF-AcidGrotesk-Black-TRIAL.woff2') format('woff2'),
+        url('../fonts/FFF-AcidGrotesk-Black-TRIAL.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FFF Acid Grotesk';
+    src: url('../fonts/FFF-AcidGrotesk-Bold-TRIAL.woff2') format('woff2'),
+        url('../fonts/FFF-AcidGrotesk-Bold-TRIAL.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FFF Acid Grotesk Extra';
+    src: url('../fonts/FFF-AcidGrotesk-ExtraLight-TRIAL.woff2') format('woff2'),
+        url('../fonts/FFF-AcidGrotesk-ExtraLight-TRIAL.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FFF Acid Grotesk';
+    src: url('../fonts/FFF-AcidGrotesk-Regular-TRIAL.woff2') format('woff2'),
+        url('../fonts/FFF-AcidGrotesk-Regular-TRIAL.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FFF Acid Grotesk Ultra';
+    src: url('../fonts/FFF-AcidGrotesk-UltraLight-TRIAL.woff2') format('woff2'),
+        url('../fonts/FFF-AcidGrotesk-UltraLight-TRIAL.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FFF Acid Grotesk Normal';
+    src: url('../fonts/FFF-AcidGrotesk-Normal-TRIAL.woff2') format('woff2'),
+        url('../fonts/FFF-AcidGrotesk-Normal-TRIAL.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

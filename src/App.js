@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 
 // Full Website CSS Link
+import './assets/fonts/stylesheet.css'
 import './assets/css/style.css';
 import './assets/css/mobile.css';
 
