@@ -39,6 +39,7 @@ width:100%;
 padding: 0 100px;
 
 }
+/* banner css start */
 
 .connect_banner{
     display:flex;
@@ -61,14 +62,15 @@ padding: 0 100px;
 
 .connect-banner-1 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto; 
-    gap: 10px;
+  grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+  grid-template-rows: 1fr 1fr; /* Two equal-height rows */
+  gap: 10px; /* Consistent gap between images */
+  height: 100%;
   }
   
   .connect-banner-1 img {
-    width: 100%; 
-    height: auto;
-    object-fit: cover; 
+    width: 100%; /* Full width for each grid cell */
+    height: 100%; /* Full height for each grid cell */
+    object-fit: cover;
   }
   
