@@ -11,3 +11,131 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+
+
+
+/* Navbar css start */
+
+/* Basic styles */
+.header {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-header-class {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo-image {
+  width: 150px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  position: relative;
+  margin-right: 1.5rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.active-link {
+  color: #ffb400;
+}
+
+/* Submenu styles */
+.dropdown .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 150px;
+}
+
+.dropdown .submenu li {
+  margin: 0;
+}
+
+.dropdown .submenu li a {
+  padding: 0.75rem 1rem;
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown .submenu li a:hover {
+  background-color: #f7f7f7;
+}
+
+/* Show submenu on hover */
+.dropdown:hover .submenu {
+  display: block;
+}
+
+/* Responsive styles */
+.menu-icon {
+  font-size: 24px;
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 1rem;
+    display: none;
+  }
+
+  .navbar.open ul {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .navbar li {
+    margin: 1rem 0;
+  }
+
+  .dropdown .submenu {
+    position: relative;
+    display: none;
+    top: auto;
+    left: auto;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .dropdown.open .submenu {
+    display: block;
+  }
+}

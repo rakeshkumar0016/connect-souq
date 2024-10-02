@@ -10,28 +10,54 @@ const Header = () => {
   };
 
   return (
-    <div className="header">
+    <header className="header">
       <div className="container">
         <div className="main-header-class">
           <div className="website-logo">
-             <img src={logoWebsite} alt="Website Logo" className="logo-image" /> 
+            <img src={logoWebsite} alt="Website Logo" className="logo-image" />
           </div>
-          <div className={`navbar ${menuOpen ? 'open' : ''}`}>
+          <nav className={`navbar ${menuOpen ? 'open' : ''}`}>
             <ul>
-              <li><NavLink to="/">Home</NavLink></li>
-              <li><NavLink to="/about">About</NavLink></li>
-              <li><NavLink to="/shop">Process</NavLink></li>
-              <li><NavLink to="/shop">Why Us</NavLink></li>
-              <li><NavLink to="/shop">Ecommerce</NavLink></li>
+              <li>
+                <NavLink exact to="/" activeClassName="active-link" onClick={() => setMenuOpen(false)}>
+                  Home
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/about" activeClassName="active-link" onClick={() => setMenuOpen(false)}>
+                  About
+                </NavLink>
+              </li>
+              {/* Process with submenu */}
+              <li className="dropdown">
+                <NavLink to="/process" activeClassName="active-link" onClick={() => setMenuOpen(false)}>
+                  Process
+                </NavLink>
+                <ul className="submenu">
+                  <li><NavLink to="/step-1">Step 1</NavLink></li>
+                  <li><NavLink to="/step-2">Step 2</NavLink></li>
+                  <li><NavLink to="/step-3">Step 3</NavLink></li>
+                </ul>
+              </li>
+              <li>
+                <NavLink to="/why-us" activeClassName="active-link" onClick={() => setMenuOpen(false)}>
+                  Why Us
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/ecommerce" activeClassName="active-link" onClick={() => setMenuOpen(false)}>
+                  Ecommerce
+                </NavLink>
+              </li>
             </ul>
-          </div>
-          <div className="menu-icon" onClick={toggleMenu}>
+          </nav>
+          <button className="menu-icon" onClick={toggleMenu} aria-label="Toggle Menu">
             ☰
-          </div>
+          </button>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 
-export default Header; 
+export default Header;
