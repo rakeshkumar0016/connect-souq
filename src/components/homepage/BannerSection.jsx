@@ -34,7 +34,9 @@ const HomeBanner = () => {
                 <h3>Your Global Marketplace for Growth</h3>
                 <p>Expand your business across 40+ countries, 20+ Sectors and turn your network into your net worth. Connect with trusted buyers, sellers, and professionals worldwide to unlock new opportunities, scale your operations, and forge valuable partnerships.</p>
               <p>Join today and take your business to new heights with seamless global connections!</p>
+
               <button className="button">Discover More<img src={buttonicon}/></button>
+
               
               </div>
             </div>
@@ -45,4 +47,3 @@ const HomeBanner = () => {
 }
 
 export default HomeBanner; 
-
