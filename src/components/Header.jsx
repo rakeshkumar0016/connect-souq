@@ -20,6 +20,7 @@ const Header = () => {
           </div>
 
           {/* Navbar */}
+
           <nav className={`navbar ${menuOpen ? 'open' : ''}`}>
             <ul>
               <li>
@@ -32,12 +33,18 @@ const Header = () => {
                   About
                 </NavLink>
               </li>
+              {/* Process with submenu */}
+
               {/* Process menu with submenu */}
+
               <li className="dropdown">
                 <NavLink to="/process" activeClassName="active-link" onClick={() => setMenuOpen(false)}>
                   Process
                 </NavLink>
                 <ul className="submenu">
+                  <li><NavLink to="/step-1">Step 1</NavLink></li>
+                  <li><NavLink to="/step-2">Step 2</NavLink></li>
+                  <li><NavLink to="/step-3">Step 3</NavLink></li>
                   <li><NavLink to="/step-1" onClick={() => setMenuOpen(false)}>Step 1</NavLink></li>
                   <li><NavLink to="/step-2" onClick={() => setMenuOpen(false)}>Step 2</NavLink></li>
                   <li><NavLink to="/step-3" onClick={() => setMenuOpen(false)}>Step 3</NavLink></li>
@@ -56,6 +63,11 @@ const Header = () => {
             </ul>
           </nav>
 
+          <button className="menu-icon" onClick={toggleMenu} aria-label="Toggle Menu">
+            ☰
+          </button>
+
+
           {/* Menu Icon for mobile */}
           <button className="menu-icon" onClick={toggleMenu} aria-label="Toggle Menu">
             ☰
@@ -72,6 +84,7 @@ const Header = () => {
               <button className="btn_join">Join Now</button>
             </div>
           </div>
+
         </div>
       </div>
     </header>
